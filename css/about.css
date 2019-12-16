@@ -71,6 +71,17 @@ p {
     margin: 0 auto;
 }
 
+.button {
+    display: flex;
+    justify-content: center;
+    border-style: 2px;
+    border-radius: 25px;
+}
+.button a {
+    padding: 5%;
+    color: black;
+}
+
 /*Header*/
 header nav {
     display: flex;
@@ -102,38 +113,104 @@ header .border-image {
     margin-bottom: 2.5%;
 }
 
+/*About*/
+.About {
+    display: flex;
+    flex-flow: wrap row;
+}
+
 /*Upper Row*/
 .upper-row {
-display: flex;
-flex-flow: row;
-justify-content: space-between;
-border: 2px solid black;
-padding: 5%;
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    padding-top: 5%;
 }
-.upper-row #Strategy {
-display: flex;
+
+
+.upper-row img {
+    display: flex;
 }
 .upper-row .button {
-display: flex;
-width: 100px;
-margin-top: 5%;
-border: 2px solid black;
+    display: flex;
+    width: 100px;
+    margin-top: 5%;
+}
+
+.upper-row h3 {
+    padding-top: 2%;
+}
+
+.upper-row .button {
+    display: flex;
+    justify-content: center;
+    border-style: 2px;
+    border-radius: 25px;
+}
+.upper-row .button a {
+    padding: 5%;
+    color: black;
 }
 
 /*Lower Row*/
 .lower-row {
-display: flex;
-flex-flow: row;
-justify-content: space-between;
-border: 2px solid black;
-padding: 5%;
-}
-.lower-row #Strategy {
-display: flex;
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    padding-top: 5%;
+    }
+.lower-row img {
+    display: flex;
 }
 .lower-row .button {
-display: flex;
-width: 100px;
-margin-top: 5%;
-border: 2px solid black;
+    display: flex;
+    width: 100px;
+    margin-top: 5%;
+    border: 2px solid black;
+}
+.lower-row h3 {
+    padding-top: 2%;
+}
+
+.button {
+    border-style: 2px;
+    border-radius: 25px;
+}
+
+.lower-row .button {
+    display: flex;
+    justify-content: center;
+    border-style: 2px;
+    border-radius: 25px;
+}
+.lower-row .button a {
+    padding: 5%;
+    color: black;
+}
+
+/*Conclusion*/
+.Together {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 7%;
+}
+
+/*Footer*/
+footer {
+    display: flex;
+    margin: 4%;
+    padding: 2% 2% 2% 2%;
+    border: 2px solid black;
+    background-color: black;
+}
+footer nav {
+    display: flex;
+    justify-content: space-around;
+    width: 40%;
+    justify-items: start;
+    border: 2px solid black;
+}
+footer a {
+    justify-items: stretch;
+    color: white;
 }
