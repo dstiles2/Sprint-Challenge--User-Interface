@@ -99,14 +99,19 @@ header .links {
     width: 50%;
     justify-content: space-around;
     padding-top: 3%;
-    /*border: 2px solid black;*/
 }
+header .links a:hover {
+    background: gray;
+    color: magenta;
+    transition: all 0.5s ease;
+}
+
 header .logo {
     display: flex;
     width: 20%;
     justify-content: flex-start;
-    /*border: 2px solid black;*/
 }
+
 header .border-image {
     display: flex;
     justify-content: center;
@@ -117,6 +122,9 @@ header .border-image {
 .About {
     display: flex;
     flex-flow: wrap row;
+}
+.About:hover {
+    background-color: goldenrod;
 }
 
 /*Upper Row*/
@@ -159,6 +167,11 @@ header .border-image {
     justify-content: space-between;
     padding-top: 5%;
     }
+
+.lower-row .places {
+    border-bottom: dashed solid 2px black;
+}
+
 .lower-row img {
     display: flex;
 }
@@ -170,11 +183,6 @@ header .border-image {
 }
 .lower-row h3 {
     padding-top: 2%;
-}
-
-.button {
-    border-style: 2px;
-    border-radius: 25px;
 }
 
 .lower-row .button {
