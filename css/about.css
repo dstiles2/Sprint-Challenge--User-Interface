@@ -66,6 +66,21 @@ p {
     line-height: 1.4;
 }
 
+.container {
+    width: 800px;
+    margin: 0 auto;
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+    border-style: 2px;
+    border-radius: 25px;
+}
+.button a {
+    padding: 5%;
+    color: black;
+}
 
 /*Header*/
 header nav {
@@ -84,128 +99,128 @@ header .links {
     width: 50%;
     justify-content: space-around;
     padding-top: 3%;
-    /*border: 2px solid black;*/
 }
+header .links a:hover {
+    background: gray;
+    color: magenta;
+    transition: all 0.5s ease;
+}
+
 header .logo {
     display: flex;
     width: 20%;
     justify-content: flex-start;
-    /*border: 2px solid black;*/
 }
+
 header .border-image {
     display: flex;
     justify-content: center;
     margin-bottom: 2.5%;
 }
 
-
-.container {
-    width: 800px;
-    margin: 0 auto;
-}
-/*Top Content*/
-.top-content {
+/*About*/
+.About {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    margin-bottom: 20px;
-    border-bottom: 1px dashed black;
+    flex-flow: wrap row;
+    padding-bottom: 2%;
+    border-bottom: dashed;
+}
+.About:hover {
+    background-color: goldenrod;
 }
 
-.top-content .text-container {
-    width: 48%;
-    padding: 0 1%;
-    padding-bottom: 20px;  
-}
-/*Boxes*/
-.middle-content {
-    margin-bottom: 20px;
-    border-bottom: 1px dashed black;
-}
-
-.middle-content h2 {
-    padding: 0 2%;
-    margin-bottom: 0;
-}
-
-.middle-content .boxes {
+/*Upper Row*/
+.upper-row {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
+    flex-flow: row;
+    justify-content: space-between;
+    padding-top: 5%;
 }
 
-.middle-content .boxes .box {
-    width: 12.5%;
-    height: 100px;
-    background: black;
-    margin: 20px 2.5%;
-    color: white;
+
+.upper-row img {
     display: flex;
-    align-items: center;
+}
+.upper-row .button {
+    display: flex;
+    width: 100px;
+    margin-top: 5%;
+}
+
+.upper-row h3 {
+    padding-top: 2%;
+}
+
+.upper-row .button {
+    display: flex;
     justify-content: center;
+    border-style: 2px;
+    border-radius: 25px;
 }
-#one {
-    background-color: teal;
-}
-#two {
-    background-color: gold;
-}
-#three {
-    background-color: cadetblue;
-}
-#four {
-    background-color: coral;
-}
-#five {
-    background-color: crimson;
-}
-#six {
-    background-color: forestgreen;
-}
-#seven {
-    background-color: darkorchid;
-}
-#eight {
-    background-color: hotpink;
-}
-#nine {
-    background-color: indigo;
-}
-#ten {
-    background-color: dodgerblue;
+.upper-row .button a {
+    padding: 5%;
+    color: black;
 }
 
-/*Bottom Content*/
-.bottom-content {
+/*Lower Row*/
+.lower-row {
     display: flex;
-    margin: 0 2% 20px;
-    justify-content: space-around;
+    flex-flow: row;
+    justify-content: space-between;
+    padding-top: 5%;
+    }
+
+.lower-row .places {
+    border-bottom: dashed solid 2px black;
 }
 
-.bottom-content .text-container {
-    padding-right: 4%;
+.lower-row img {
+    display: flex;
+}
+.lower-row .button {
+    display: flex;
+    width: 100px;
+    margin-top: 5%;
+    border: 2px solid black;
+}
+.lower-row h3 {
+    padding-top: 2%;
 }
 
-.bottom-content .text-container:last-child {
-    padding-right: 0;
+.lower-row .button {
+    display: flex;
+    justify-content: center;
+    border-style: 2px;
+    border-radius: 25px;
+}
+.lower-row .button a {
+    padding: 5%;
+    color: black;
+}
+
+/*Conclusion*/
+.Together {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 7%;
 }
 
 /*Footer*/
 footer {
-    width: 100%;
-    background: black;
-}
-
-footer nav {
-    width: 60%;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px 2%;
-    font-size: 14px;
+    margin: 4%;
+    padding: 2% 2% 2% 2%;
+    border: 2px solid black;
+    background-color: black;
 }
-
-footer nav a {
+footer nav {
+    display: flex;
+    justify-content: space-around;
+    width: 40%;
+    justify-items: start;
+    border: 2px solid black;
+}
+footer a {
+    justify-items: stretch;
     color: white;
-    text-decoration: none;
 }
