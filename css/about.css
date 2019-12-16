@@ -122,6 +122,8 @@ header .border-image {
 .About {
     display: flex;
     flex-flow: wrap row;
+    padding-bottom: 2%;
+    border-bottom: dashed;
 }
 .About:hover {
     background-color: goldenrod;
